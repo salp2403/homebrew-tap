@@ -1,12 +1,6 @@
-# Homebrew Cask for Cocxy Terminal
-# Usage: brew tap cocxy/tap && brew install --cask cocxy
-#
-# This formula will be published to a separate tap repository
-# when the first public release is ready.
-
 cask "cocxy" do
-  version "0.1.0"
-  sha256 :no_check # Updated on each release
+  version "0.1.1"
+  sha256 :no_check
 
   url "https://github.com/salp2403/cocxy-terminal/releases/download/v#{version}/CocxyTerminal-#{version}.dmg"
   name "Cocxy Terminal"
@@ -22,11 +16,11 @@ cask "cocxy" do
 
   app "Cocxy Terminal.app"
 
-  binary "#{appdir}/Cocxy Terminal.app/Contents/MacOS/Cocxy Terminal", target: "cocxy"
+  binary "#{appdir}/Cocxy Terminal.app/Contents/Resources/cocxy"
 
   zap trash: [
     "~/.config/cocxy",
-    "~/Library/Preferences/com.cocxy.terminal.plist",
-    "~/Library/Caches/com.cocxy.terminal",
+    "~/Library/Preferences/dev.cocxy.terminal.plist",
+    "~/Library/Caches/dev.cocxy.terminal",
   ]
 end
