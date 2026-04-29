@@ -1,6 +1,6 @@
 cask "cocxy" do
-  version "0.1.90"
-  sha256 "ff4ed29c75d686beb9c1e8d3a7597e2442a7b1c10daab9573aa13e0a60bda9e6"
+  version "0.1.91"
+  sha256 "c0e4b4377e7b2858be55668447819953275f074096a32db1d6da834d34b9345f"
 
   url "https://github.com/salp2403/cocxy-terminal/releases/download/v#{version}/CocxyTerminal-#{version}.dmg"
   name "Cocxy Terminal"
